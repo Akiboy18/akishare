@@ -1,0 +1,79 @@
+AkiShare - Self Explanatory Document
+------------------------------------------------------------------------------------------------------
+Project Title: AkiShare
+------------------------------------------------------------------------------------------------------
+
+Description:
+
+AkiShare is a Python-based file-sharing application designed for local network file transfers. It abstracts IP addresses and port numbers into easy-to-read codes, making file sharing more accessible and user-friendly. This tool is ideal for users who wish to share files quickly on a LAN (Local Area Network) without the need for complex configuration.
+
+------------------------------------------------------------------------------------------------------
+
+Features
+
+Readable Code for IP/Port: Translates IP addresses and ports into a 6-character readable code, simplifying the sharing process.
+
+File Transfer Over Local Network: Enables fast file transfer without the need for internet connectivity.
+
+Cross-Platform: Built in Python, making it compatible with any platform that supports Python.
+
+GUI Interface: A minimalistic Tkinter-based GUI for easy interaction.
+
+-------------------------------------------------------------------------------------------------------
+Setup Instructions
+
+Requirements
+
+-Python 3.x
+
+-Required Python libraries:
+--socket (for networking)
+
+threading (for managing concurrent connections)
+tkinter (for the GUI)
+random (for random port selection)
+
+Running Instructions
+run the python file akishare01.py
+The GUI will launch, displaying options to Send File and Receive File.
+
+Usage Instructions
+
+To Send a File
+Click on "Send File": Choose the file you wish to send from your computer.
+Receive the Share Code: A readable code will be displayed, representing your IP and port.
+Share the Code with the Recipient: Provide the code to the user who wants to receive the file.
+
+To Receive a File
+Click on "Receive File": Enter the Share Code provided by the sender.
+Confirm Download: Accept the download prompt to save the file on your device.
+Specify File Location: Choose where to save the file on your computer.
+
+
+How IP and Port Conversion Works
+
+Readable Code Generation: The IP and port are translated into a unique, readable 9-character code using predefined combinations of letters.
+
+Code Interpretation: The application converts this readable code back into the IP address and port, enabling a connection between the sender and receiver.
+
+
+Potential Issues
+
+Local Network Only: AkiShare works only over a local network and cannot connect devices on different networks.
+
+Port Limitations: Only ports 8000–8010 are mapped to characters. Users may encounter conflicts if many transfers are taking place simultaneously.
+
+Lack of Encryption: Files are transferred without encryption, so it’s best to use AkiShare on a secure network.
+
+Error Handling: Basic error handling is in place, but network interruptions or incorrect codes may cause unexpected behavior.
+Future Enhancements
+
+Extended Port Mapping: Add support for a broader range of ports for scalability.
+
+Encryption: Implement secure file transfer encryption to improve security.
+
+Automatic Network Discovery: Enable the application to automatically detect other devices running AkiShare on the network.
+
+Contributors
+
+Primary Developer: Akhilesh R
